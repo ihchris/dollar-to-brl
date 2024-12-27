@@ -47,9 +47,9 @@
 </head>
 <body>
     <div class="container">
-        <h1></h1>
+        <h1>Real-time USD to BRL Exchange Rate</h1>
         <div id="rate"><span id="rate-value">Loading...</span></div>
-        <div id="status">Atualizando em tempo real</div>
+        <div id="status">Atualizando em tempo real...</div>
     </div>
 
     <script>
@@ -66,7 +66,7 @@
             };
 
             socket.onopen = function() {
-                statusDiv.textContent = 'Atualizando em tempo real';
+                statusDiv.textContent = 'Atualizando em tempo real...';
             };
 
             socket.onclose = function() {
